@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <title>To do List</title>
+</head>
+
+<body>
+
+    <header class="header-projeto">
+        <div class="div-header">
+            <h1>e-Tasks</h1>
+            <p>Transforme suas listas em conquistas: organize, priorize e realize!</p>
+        </div>
+    </header>
+
+
+    <main class="main-projeto">
+        <div class="div-tarefa">
+            <section class="section-cadastro">
+                <input type="text" class="input-cadastro" placeholder="Adicione uma nova tarefa" required>
+                <button class="btn-cadastro">Cadastrar</button>
+            </section>
+
+
+            <section class="section-criar-tarefa">
+                <div class="div-criadas">
+                    <strong>Tarefa criadas</strong>
+                    <span id="criadas">0</span>
+                </div>
+                <div class="div-concluidas">
+                    <strong>Concluidos</strong>
+                    <span id="concluidas">0</span>
+                </div>
+            </section>
+            <section class="section-tarefa-criada">
+                
+                <ul class="task-list">
+                    
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+
+/* header do proketo */
+
+
+
+.header-projeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ddd2ef;
+    color: #6F3CC3;
+    width: 100%;
+    height: 220px;
+
+}
+
+.div-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    max-width: 968px;
+    padding: 0px 20px;
+
+}
+
+/* main */
+
+.main-projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+
+.div-tarefa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 968px;
+}
+
+/* parte do cadastro */
+
+.section-cadastro{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: -30px;
+}
+
+.input-cadastro{
+    padding: 20px;
+    width: 100%;
+    height: 90%;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.input-cadastro:hover{
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px #6f7770;
+}
+
+.btn-cadastro{
+    height: 90%;
+    width: 100px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    
+    background-color: #148f25;
+    color: #eee;
+    
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.btn-cadastro:hover{
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 2px 3px 7px #5e5e5e;
+}
+
+/* parte de adicao de tarefa */
+
+.section-criar-tarefa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+
+}
+
+.section-criar-tarefa strong{
+    font-size: 16px;
+    color: #6b6572;
+}
+
+#criadas{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 50%;
+    color: #6F3CC3;
+    background-color:#ddd2ef;
+}
+
+#concluidas{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 50%;
+    background-color: #bfe3d0;
+    color:#2d6c4a;
+}
+
+.div-criadas{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.div-concluidas{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* onde a tarefa criada fica */
+
+.section-tarefa-criada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    
+}
+
+.section-tarefa-criada p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6F3CC3;
+}
+
+.task-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+  .task-item {
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e0dce4;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+  
+    appearance: none;
+  
+    background-color: transparent;
+  
+    outline: none;
+  
+    font: inherit;
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+    border: 1px dashed #6f3cc3;
+    border-radius: 10em;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    background-color: var(--white);
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: var(--green-500);
+    border-color: var(--green-500);
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  
+  input[type="checkbox"]:disabled {
+  
+    cursor: not-allowed;
+  }
+
+ 
